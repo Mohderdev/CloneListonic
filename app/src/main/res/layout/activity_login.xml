@@ -1,0 +1,131 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Close Button -->
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:focusable="true"
+        android:src="@drawable/ic_close"
+        android:contentDescription="Close"
+        android:clickable="true"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Welcome Header -->
+    <TextView
+        android:id="@+id/tvWelcomeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back! 👋"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Illustration -->
+    <ImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_grocery_basket"
+        android:contentDescription="Grocery Illustration"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Never forget what to buy"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create lists in seconds and always buy what you actually need."
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Pagination Dots -->
+    <LinearLayout
+        android:id="@+id/llDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <!-- Login Buttons -->
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:="@drawable/Ic_facebook"
+        android:backgroundTint="#E4E4E4"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:text="Continue with Facebook"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#565454"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_google"
+        android:drawablePadding="8dp"
+        android:padding="12dp" />
+
+    <!-- Divider -->
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#CCCCCC"
+        android:gravity="center"
+        android:layout_marginVertical="8dp" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE WITH EMAIL"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/background"
+        android:padding="12dp" />
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/tvSignUpPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#00FF00"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

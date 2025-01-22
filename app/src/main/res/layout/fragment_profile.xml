@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Hello Text -->
+
+            <!-- Wave Emoji -->
+
+            <!-- Profile Icon -->
+
+            <TextView
+                android:id="@+id/tvHello"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello!"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <ImageView
+                android:id="@+id/ivWave"
+                app:layout_constraintBottom_toBottomOf="@id/tvHello"
+                app:layout_constraintStart_toEndOf="@id/tvHello"
+                app:layout_constraintTop_toTopOf="@id/tvHello"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Wave Emoji"
+                android:src="@drawable/ic_wave"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#FFFFFF"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Profile Icon"
+                android:padding="8dp"
+                android:src="@drawable/ic_profile"
+                tools:layout_editor_absoluteX="293dp"
+                tools:layout_editor_absoluteY="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Log In Section -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:text="Log in"
+            android:textColor="#32CD32"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLoginDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:text="Log in to share and sync lists"
+            android:textColor="#CCCCCC" />
+
+        <!-- Settings Section -->
+        <TextView
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawableTint="@color/white"
+            android:drawablePadding="8dp"
+            android:clickable="true"
+            android:textStyle="bold" />
+
+        <!-- Appearance Section -->
+        <TextView
+            android:id="@+id/tvAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appearance"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:textSize="30sp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_pallete"
+            android:drawablePadding="6dp" />
+
+        <!-- Holiday Sale Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#32CD32"
+            android:layout_marginTop="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holiday sale!"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-33%"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Feedback Section -->
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enjoying the app? Rate us ★★★★★"
+            android:textColor="#FF4500"
+            android:layout_marginTop="16dp" />
+
+        <!-- Help Section -->
+        <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help - feedback"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Translate Section -->
+        <TextView
+            android:id="@+id/tvTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help us translate"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Footer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIVACY POLICY"
+                android:textColor="#CCCCCC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="•"
+                android:textColor="#CCCCCC"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TERMS OF SERVICE"
+                android:textColor="#CCCCCC" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

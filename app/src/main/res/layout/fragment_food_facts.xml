@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvFoodFactsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food facts"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            android:tint="#CCCCCC"
+            tools:ignore="UseAppTint" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Search for a product"
+
+            android:paddingStart="8dp"
+            android:textColor="#EFE5E5"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvFoodFactsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on a product to learn more about its nutrients, uses, and storage tips"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp" />
+
+    <!-- Tags -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <!-- Add more tags as TextViews -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="#1E90FF"
+                android:padding="8dp"
+
+                android:text="#Fridge"
+                android:textColor="#FFFFFF"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Freezer"
+                android:background="#800080"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                />
+
+            <!-- Add other tags similarly -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Product Grid -->
+    <GridView
+        android:id="@+id/gvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+
+        android:layout_marginBottom="16dp" />
+
+
+</LinearLayout>
